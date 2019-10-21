@@ -144,15 +144,49 @@ header #navbar .title {
 header #navbar .navlinks {
   display: flex;
   margin-right: 150px;
-  font: 12px roboto;
+  font: 12px "Calibri", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 header #navbar .navlinks a {
   color: #fff;
   text-decoration: none;
+}
+header #navbar .navlinks .nav_a {
+  margin-top: 10px;
+  opacity: 0.7;
   margin-left: 50px;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+header #navbar .navlinks .nav_a:hover {
+  opacity: 1;
+  border-bottom: 2px solid #719192;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+header #navbar .navlinks .login,
+header #navbar .navlinks .register {
+  padding: 8px 20px;
+  font-size: 14px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 header #navbar .navlinks .login {
-  border: 1px solid #fff;
+  margin-left: 50px;
+}
+header #navbar .navlinks .register {
+  margin-left: 20px;
+}
+header #navbar .navlinks .register {
+  border-color: #719192;
+  background-color: #719192;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+header #navbar .navlinks .register:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
