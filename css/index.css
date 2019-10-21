@@ -125,14 +125,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-h1 {
-  font: 80px "Exo", sans-serif;
-  color: #fff;
-}
 header {
   width: 100%;
   height: 100%;
   position: relative;
+  font: 16px "Calibri", sans-serif;
   background-image: url("/images/header.png");
 }
 header #navbar {
@@ -143,7 +140,7 @@ header #navbar {
   width: 100%;
   height: 75px;
   color: #fff;
-  background-color: #3c4245;
+  background-color: #302f30;
 }
 header #navbar .title {
   margin-left: 150px;
@@ -171,7 +168,7 @@ header #navbar .navlinks .nav_a {
 }
 header #navbar .navlinks .nav_a:hover {
   opacity: 1;
-  border-bottom: 2px solid #719192;
+  border-bottom: 2px solid #ED5565;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
@@ -191,8 +188,8 @@ header #navbar .navlinks .register {
   margin-left: 20px;
 }
 header #navbar .navlinks .register {
-  border-color: #719192;
-  background-color: #719192;
+  border-color: #ED5565;
+  background-color: #ED5565;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -202,6 +199,7 @@ header #navbar .navlinks .register:hover {
 }
 header h1 {
   margin-top: 150px;
+  margin-bottom: 10px;
   font: 80px "Exo", sans-serif;
   text-align: center;
   text-transform: uppercase;
@@ -214,5 +212,20 @@ header #welcome {
   margin: 0 auto;
   text-align: center;
   line-height: 20px;
+  font: 16px "Calibri", sans-serif;
   color: #fff;
+}
+header #welcome #learnmore {
+  margin-top: 40px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+header #welcome #learnmore a {
+  padding: 8px 20px;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #ED5565;
+  border-radius: 20px;
 }
