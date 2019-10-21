@@ -129,7 +129,6 @@ header {
   width: 100%;
   height: 100%;
   position: relative;
-  font: 16px "Calibri", sans-serif;
   background-image: url("/images/header.png");
 }
 header #navbar {
@@ -228,4 +227,21 @@ header #welcome #learnmore a {
   text-decoration: none;
   border: 1px solid #ED5565;
   border-radius: 20px;
+}
+#content {
+  width: 800px;
+  margin: 0 auto;
+  font: 16px "Calibri", sans-serif;
+  color: #302f30;
+}
+#content h3 {
+  font: 35px "Exo", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #ED5565;
+}
+#content #subsection {
+  display: inline-flex;
+  margin: 20px;
 }
