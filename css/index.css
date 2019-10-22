@@ -284,7 +284,7 @@ header #welcome #learnmore a {
   width: 50%;
 }
 #content #aboutus #us .profile {
-  margin-bottom: 30px;
+  margin-top: 30px;
   font-size: 14px;
 }
 #content #aboutus #us .profile img {
@@ -297,4 +297,18 @@ header #welcome #learnmore a {
 #content #aboutus #us .profile .role {
   font-size: 18px;
   font-style: italic;
+}
+footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 75px;
+  color: #fff;
+  background-color: #302f30;
+}
+footer a {
+  color: #ED5565;
+  text-decoration: none;
 }
