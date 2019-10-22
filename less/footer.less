@@ -1,15 +1,51 @@
 footer{
     position:relative;
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
+    align-items:center;
+    box-sizing:border-box;
     box-sizing:border-box;
     width:100%;
     height:75px;
     color:@navtext;
     background-color:@navbg;
 
-    a{
-        color:@accent;
-        text-decoration:none;
+    .title{
+        display:flex;
+        align-items:center;
+        font: 20px @headerfont;
+        text-transform:uppercase;
+        letter-spacing:2px;
+
+        .logo{
+            margin-right:15px;
+            font-size:40px;
+            color:@accent;
+        }
+    }
+
+    .copyright{
+        margin-left:150px;
+        opacity:0.7;
+        font:14px @bodyfont;  
+    }
+
+    .socialmedia{
+        margin-right:150px;
+
+        a{
+            font-size:18px;
+            margin-left:20px;
+            color:@navtext;
+            text-decoration:none;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+        a:hover{
+            color:@accent;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;    
+        }
     }
 }

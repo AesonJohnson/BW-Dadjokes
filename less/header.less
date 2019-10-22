@@ -14,11 +14,19 @@ header{
         color:@navtext;
         background-color:@navbg;
 
-        .title{
+        .navtitle{
+            display:flex;
+            align-items:center;
             margin-left:150px;
             font: 20px @headerfont;
             text-transform:uppercase;
             letter-spacing:2px;
+
+            .navlogo{
+                margin-right:15px;
+                font-size:40px;
+                color:@accent;
+            }
         }
 
         .navlinks{
