@@ -11,7 +11,7 @@ header{
         box-sizing:border-box;
         width:100%;
         height:75px;
-        color:@navtext;
+        color:@text1;
         background-color:@navbg;
 
         @media(max-width:@mobile){
@@ -26,6 +26,7 @@ header{
             font: 20px @headerfont;
             text-transform:uppercase;
             letter-spacing:2px;
+            color:@text3;
 
             @media(max-width:@mobile){
                 display:none;
@@ -34,7 +35,7 @@ header{
             .navlogo{
                 margin-right:15px;
                 font-size:40px;
-                color:@accent;
+                color:@accent1;
             }
         }
 
@@ -46,17 +47,22 @@ header{
             letter-spacing:1px; 
 
             a{
-                color:@navtext;
+                opacity:.7;
+                color:@text3;
                 text-decoration:none;
 
             }
 
+            a:hover{
+                opacity:1;
+            }
+
             .nav_a{
                 margin-top:10px;
-                opacity:0.7;
                 margin-left:50px;
-                -webkit-transition: opacity 0.3s ease-in-out;
-                transition: opacity 0.3s ease-in-out;
+                border-bottom:2px solid @navbg;
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
 
                 @media(max-width:@mobile){
                    margin-left:20px;
@@ -64,17 +70,15 @@ header{
             }
             
             .nav_a:hover{
-                opacity:1;
-                border-bottom:2px solid @accent;
-                -webkit-transition: opacity 0.3s ease-in-out;
-                transition: opacity 0.3s ease-in-out;
+                border-bottom:2px solid @accent1;
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
                 
             }
 
             .login, .register{
                 padding: 8px 20px;
                 font-size:14px;
-                border:1px solid @navtext;
                 border-radius:7px;
                 -webkit-transition: all 0.3s ease-in-out;
                 transition: all 0.3s ease-in-out;
@@ -88,57 +92,70 @@ header{
 
             .login{
                 margin-left:50px;
+                border:1px solid @text2;
+
+                a{
+                    opacity:1;
+                    color:@text3;
+                }
 
                 @media(max-width:@mobile){
                     margin-left:30px;
                 }
             }
 
-            .register{
-                margin-left:20px;
+            .login:hover{
+                border-color:@accent3;
+                background-color:@accent3;
             }
 
             .register{
-                border-color:@accent;
-                background-color:@accent;
+                margin-left:20px;
+                background-color:@accent1;
                 -webkit-transition: all 0.3s ease-in-out;
                 transition: all 0.3s ease-in-out;
+
+                a{
+                    opacity:1;
+                    color:@text3;
+                }
             }
 
             .register:hover{
+                background-color:@accent3;
                 -webkit-transition: all 0.3s ease-in-out;
                 transition: all 0.3s ease-in-out;
             }
         }
-    }
-
-    h1{
-        margin-top:150px;
-        margin-bottom:10px;
-        font: 80px @headerfont;
-        text-align:center;
-        text-transform:uppercase;
-        letter-spacing:5px;
-        color:@navtext;
-
-        @media(max-width:@mobile){
-            margin-top:100px;
-            font-size:60px;
-        }
-
     }
 
     #welcome{
         width:800px;
-        padding-bottom:100px;
+        padding-bottom:150px;
         margin: 0 auto;
         text-align:center;
         line-height:20px;
         font:16px @bodyfont;
-        color:@navtext;
+        color:@text3;
 
         @media(max-width:@mobile){
+            padding-bottom:100px;
             width:95%;
+        }
+
+        h1{
+            margin-top:150px;
+            margin-bottom:10px;
+            font: 80px @headerfont;
+            text-align:center;
+            text-transform:uppercase;
+            letter-spacing:5px;
+            color:@text3;
+    
+            @media(max-width:@mobile){
+                margin-top:100px;
+                font-size:60px;
+            }
         }
 
         #learnmore{
@@ -150,10 +167,11 @@ header{
 
             a{
                 padding: 8px 20px;
-                color:@navtext;
                 text-decoration:none;
-                border: 1px solid @accent;
                 border-radius:7px;
+                color:@text3;
+                border:1px solid @navbg;
+                background-color:@navbg;
             }
         }
     }
