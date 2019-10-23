@@ -31,7 +31,6 @@ header{
                 display:none;
             }
     
-
             .navlogo{
                 margin-right:15px;
                 font-size:40px;
@@ -44,7 +43,7 @@ header{
             margin-right:150px;
             font: 12px @bodyfont;
             text-transform:uppercase;
-            letter-spacing:1px;
+            letter-spacing:1px; 
 
             a{
                 color:@navtext;
@@ -76,14 +75,23 @@ header{
                 padding: 8px 20px;
                 font-size:14px;
                 border:1px solid @navtext;
-                border-radius:20px;
+                border-radius:7px;
                 -webkit-transition: all 0.3s ease-in-out;
                 transition: all 0.3s ease-in-out;
-        
+
+                @media(max-width:@mobile){
+                    padding: 8px 20px;
+                    font-size:12px;
+                }
+
             }
 
             .login{
                 margin-left:50px;
+
+                @media(max-width:@mobile){
+                    margin-left:30px;
+                }
             }
 
             .register{
@@ -130,7 +138,7 @@ header{
         color:@navtext;
 
         @media(max-width:@mobile){
-            width:@mobile;
+            width:95%;
         }
 
         #learnmore{
@@ -145,9 +153,11 @@ header{
                 color:@navtext;
                 text-decoration:none;
                 border: 1px solid @accent;
-                border-radius:20px;
+                border-radius:7px;
             }
         }
     }
 }
+
+
 

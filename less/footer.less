@@ -10,12 +10,22 @@ footer{
     color:@navtext;
     background-color:@navbg;
 
+    @media(max-width:@mobile){
+        width:@mobile;
+        display:inline-block;
+        margin-top:-20px;
+    }
+
     .title{
         display:flex;
         align-items:center;
         font: 20px @headerfont;
         text-transform:uppercase;
         letter-spacing:2px;
+
+        @media(max-width:@mobile){
+            display:none;
+        }
 
         .logo{
             margin-right:15px;
@@ -28,10 +38,23 @@ footer{
         margin-left:150px;
         opacity:0.7;
         font:14px @bodyfont;  
+
+        @media(max-width:@mobile){
+            margin-left:0px;
+            margin-top:45px;
+            text-align:center;
+        }
     }
 
     .socialmedia{
         margin-right:150px;
+
+        @media(max-width:@mobile){
+            position:absolute;
+            width:@mobile;
+            margin-top:-45px;
+            text-align:center;
+        }
 
         a{
             font-size:18px;
@@ -40,6 +63,12 @@ footer{
             text-decoration:none;
             -webkit-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
+
+            @media(max-width:@mobile){
+                margin-left:0px;
+                margin-right:20px;
+            }
+            
         }
 
         a:hover{
