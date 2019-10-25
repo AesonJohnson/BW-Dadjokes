@@ -370,12 +370,6 @@ header #welcome #learnmore a {
   letter-spacing: 5px;
   color: #fff;
 }
-@media (max-width: 500px) {
-  #about .subsection h1 {
-    margin-top: 100px;
-    font-size: 60px;
-  }
-}
 #aboutcontent {
   width: 800px;
   margin: 0 auto;
@@ -388,7 +382,8 @@ header #welcome #learnmore a {
 }
 @media (max-width: 500px) {
   #aboutcontent {
-    width: 95%;
+    margin-top: 25px;
+    width: 90%;
   }
 }
 #aboutcontent p {
